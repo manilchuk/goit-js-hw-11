@@ -31,6 +31,7 @@ input {
   padding: 8px 16px;
   box-sizing: border-box;
   margin-right: 8px;
+  margin-bottom: 32px;
 }
 
 input:hover {
@@ -70,8 +71,35 @@ button:hover {
   background: #6c8cff;
 }
 
-img {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(360px * 3 + 48px);
+  gap: 24px;
+  margin: 0 auto;
+}
+.gallery-image {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+}
+.info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.info-item b {
+  margin-bottom: 5px;
+}
+
+.info-item span {
+  font-weight: normal;
 }
